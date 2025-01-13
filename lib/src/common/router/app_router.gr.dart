@@ -1,3 +1,4 @@
+// dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
@@ -8,247 +9,6 @@
 // coverage:ignore-file
 
 part of 'app_router.dart';
-
-abstract class _$AppRouter extends RootStackRouter {
-  // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
-
-  @override
-  final Map<String, PageFactory> pagesMap = {
-    TabsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const TabsScreen(),
-      );
-    },
-    SettingsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SettingsScreen(),
-      );
-    },
-    LicensesRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const LicensesScreen(),
-      );
-    },
-    HomeRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const HomeScreen(),
-      );
-    },
-    SplashRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SplashScreen(),
-      );
-    },
-    FavoritesRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const FavoritesScreen(),
-      );
-    },
-    GenreRoute.name: (routeData) {
-      final args = routeData.argsAs<GenreRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: GenreScreen(
-          key: args.key,
-          title: args.title,
-          url: args.url,
-        ),
-      );
-    },
-    ExploreRouteSmall.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ExploreScreenSmall(),
-      );
-    },
-    ExploreRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ExploreScreen(),
-      );
-    },
-    BookDetailsRoute.name: (routeData) {
-      final args = routeData.argsAs<BookDetailsRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: BookDetailsScreen(
-          key: args.key,
-          entry: args.entry,
-          imgTag: args.imgTag,
-          titleTag: args.titleTag,
-          authorTag: args.authorTag,
-        ),
-      );
-    },
-    DownloadsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const DownloadsScreen(),
-      );
-    },
-  };
-}
-
-/// generated route for
-/// [TabsScreen]
-class TabsRoute extends PageRouteInfo<void> {
-  const TabsRoute({List<PageRouteInfo>? children})
-      : super(
-          TabsRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'TabsRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [SettingsScreen]
-class SettingsRoute extends PageRouteInfo<void> {
-  const SettingsRoute({List<PageRouteInfo>? children})
-      : super(
-          SettingsRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'SettingsRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [LicensesScreen]
-class LicensesRoute extends PageRouteInfo<void> {
-  const LicensesRoute({List<PageRouteInfo>? children})
-      : super(
-          LicensesRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'LicensesRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [HomeScreen]
-class HomeRoute extends PageRouteInfo<void> {
-  const HomeRoute({List<PageRouteInfo>? children})
-      : super(
-          HomeRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'HomeRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [SplashScreen]
-class SplashRoute extends PageRouteInfo<void> {
-  const SplashRoute({List<PageRouteInfo>? children})
-      : super(
-          SplashRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'SplashRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [FavoritesScreen]
-class FavoritesRoute extends PageRouteInfo<void> {
-  const FavoritesRoute({List<PageRouteInfo>? children})
-      : super(
-          FavoritesRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'FavoritesRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [GenreScreen]
-class GenreRoute extends PageRouteInfo<GenreRouteArgs> {
-  GenreRoute({
-    Key? key,
-    required String title,
-    required String url,
-    List<PageRouteInfo>? children,
-  }) : super(
-          GenreRoute.name,
-          args: GenreRouteArgs(
-            key: key,
-            title: title,
-            url: url,
-          ),
-          initialChildren: children,
-        );
-
-  static const String name = 'GenreRoute';
-
-  static const PageInfo<GenreRouteArgs> page = PageInfo<GenreRouteArgs>(name);
-}
-
-class GenreRouteArgs {
-  const GenreRouteArgs({
-    this.key,
-    required this.title,
-    required this.url,
-  });
-
-  final Key? key;
-
-  final String title;
-
-  final String url;
-
-  @override
-  String toString() {
-    return 'GenreRouteArgs{key: $key, title: $title, url: $url}';
-  }
-}
-
-/// generated route for
-/// [ExploreScreenSmall]
-class ExploreRouteSmall extends PageRouteInfo<void> {
-  const ExploreRouteSmall({List<PageRouteInfo>? children})
-      : super(
-          ExploreRouteSmall.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'ExploreRouteSmall';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
-
-/// generated route for
-/// [ExploreScreen]
-class ExploreRoute extends PageRouteInfo<void> {
-  const ExploreRoute({List<PageRouteInfo>? children})
-      : super(
-          ExploreRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'ExploreRoute';
-
-  static const PageInfo<void> page = PageInfo<void>(name);
-}
 
 /// generated route for
 /// [BookDetailsScreen]
@@ -261,21 +21,32 @@ class BookDetailsRoute extends PageRouteInfo<BookDetailsRouteArgs> {
     required String authorTag,
     List<PageRouteInfo>? children,
   }) : super(
-          BookDetailsRoute.name,
-          args: BookDetailsRouteArgs(
-            key: key,
-            entry: entry,
-            imgTag: imgTag,
-            titleTag: titleTag,
-            authorTag: authorTag,
-          ),
-          initialChildren: children,
-        );
+         BookDetailsRoute.name,
+         args: BookDetailsRouteArgs(
+           key: key,
+           entry: entry,
+           imgTag: imgTag,
+           titleTag: titleTag,
+           authorTag: authorTag,
+         ),
+         initialChildren: children,
+       );
 
   static const String name = 'BookDetailsRoute';
 
-  static const PageInfo<BookDetailsRouteArgs> page =
-      PageInfo<BookDetailsRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<BookDetailsRouteArgs>();
+      return BookDetailsScreen(
+        key: args.key,
+        entry: args.entry,
+        imgTag: args.imgTag,
+        titleTag: args.titleTag,
+        authorTag: args.authorTag,
+      );
+    },
+  );
 }
 
 class BookDetailsRouteArgs {
@@ -307,12 +78,182 @@ class BookDetailsRouteArgs {
 /// [DownloadsScreen]
 class DownloadsRoute extends PageRouteInfo<void> {
   const DownloadsRoute({List<PageRouteInfo>? children})
-      : super(
-          DownloadsRoute.name,
-          initialChildren: children,
-        );
+    : super(DownloadsRoute.name, initialChildren: children);
 
   static const String name = 'DownloadsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DownloadsScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [ExploreScreen]
+class ExploreRoute extends PageRouteInfo<void> {
+  const ExploreRoute({List<PageRouteInfo>? children})
+    : super(ExploreRoute.name, initialChildren: children);
+
+  static const String name = 'ExploreRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ExploreScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [ExploreScreenSmall]
+class ExploreRouteSmall extends PageRouteInfo<void> {
+  const ExploreRouteSmall({List<PageRouteInfo>? children})
+    : super(ExploreRouteSmall.name, initialChildren: children);
+
+  static const String name = 'ExploreRouteSmall';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ExploreScreenSmall();
+    },
+  );
+}
+
+/// generated route for
+/// [FavoritesScreen]
+class FavoritesRoute extends PageRouteInfo<void> {
+  const FavoritesRoute({List<PageRouteInfo>? children})
+    : super(FavoritesRoute.name, initialChildren: children);
+
+  static const String name = 'FavoritesRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const FavoritesScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [GenreScreen]
+class GenreRoute extends PageRouteInfo<GenreRouteArgs> {
+  GenreRoute({
+    Key? key,
+    required String title,
+    required String url,
+    List<PageRouteInfo>? children,
+  }) : super(
+         GenreRoute.name,
+         args: GenreRouteArgs(key: key, title: title, url: url),
+         initialChildren: children,
+       );
+
+  static const String name = 'GenreRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<GenreRouteArgs>();
+      return GenreScreen(key: args.key, title: args.title, url: args.url);
+    },
+  );
+}
+
+class GenreRouteArgs {
+  const GenreRouteArgs({this.key, required this.title, required this.url});
+
+  final Key? key;
+
+  final String title;
+
+  final String url;
+
+  @override
+  String toString() {
+    return 'GenreRouteArgs{key: $key, title: $title, url: $url}';
+  }
+}
+
+/// generated route for
+/// [HomeScreen]
+class HomeRoute extends PageRouteInfo<void> {
+  const HomeRoute({List<PageRouteInfo>? children})
+    : super(HomeRoute.name, initialChildren: children);
+
+  static const String name = 'HomeRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const HomeScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [LicensesScreen]
+class LicensesRoute extends PageRouteInfo<void> {
+  const LicensesRoute({List<PageRouteInfo>? children})
+    : super(LicensesRoute.name, initialChildren: children);
+
+  static const String name = 'LicensesRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LicensesScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [SettingsScreen]
+class SettingsRoute extends PageRouteInfo<void> {
+  const SettingsRoute({List<PageRouteInfo>? children})
+    : super(SettingsRoute.name, initialChildren: children);
+
+  static const String name = 'SettingsRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SettingsScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [SplashScreen]
+class SplashRoute extends PageRouteInfo<void> {
+  const SplashRoute({List<PageRouteInfo>? children})
+    : super(SplashRoute.name, initialChildren: children);
+
+  static const String name = 'SplashRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SplashScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [TabsScreen]
+class TabsRoute extends PageRouteInfo<void> {
+  const TabsRoute({List<PageRouteInfo>? children})
+    : super(TabsRoute.name, initialChildren: children);
+
+  static const String name = 'TabsRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const TabsScreen();
+    },
+  );
 }
